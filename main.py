@@ -5,9 +5,9 @@ from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from news import LK
 
 
-API_ID = ''
-API_HASH = ''
-BOT_TOKEN = ''
+API_ID = '14055090'
+API_HASH = 'a46f7b439d0afa45b7a69fc450f754e9'
+BOT_TOKEN = '5889157468:AAEYpUCdl3MJry5cDGHr3eWjM-5Tv5YnXns'
 
 bot = Client(
     "lol",
