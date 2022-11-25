@@ -20,7 +20,7 @@ The Simple And Fast News Bot
 
 3. Enter the directory
    ```markdown
-   cd main.py
+   cd config
    ```
 4. Run the file
    ```markdown
