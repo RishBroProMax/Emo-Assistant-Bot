@@ -1,6 +1,8 @@
 # News-Bot
 The Simple And Fast News Bot
 
+## Deploy Now
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RishBropromax/News-Bot.git)
 
 1. Tap on above button and fill `API_ID`, `API_HASH`, `BOT_TOKEN`.
@@ -39,5 +41,5 @@ The Simple And Fast News Bot
 
 # ❤️Credits
 
-### Rishmika Sandanu
-### ImDenuwan
+### ✨Rishmika Sandanu
+### ✨ImDenuwan
