@@ -1,7 +1,7 @@
 # News-Bot
 The Simple And Fast News Bot
 
-## Deploy Now
+## 🧩Deploy Now
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RishBropromax/News-Bot.git)
 
@@ -10,7 +10,7 @@ The Simple And Fast News Bot
 3. After deploying is complete, tap on "Manage App"
 4. Check the logs to see if your bot is ready!
 
-### Local Deploying
+### 📡Local Deploying
 
 1. Clone the repo
    ```markdown
