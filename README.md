@@ -10,25 +10,6 @@ The Simple And Fast News Bot
 3. After deploying is complete, tap on "Manage App"
 4. Check the logs to see if your bot is ready!
 
-### 📡Local Deploying
-
-1. Clone the repo
-   ```markdown
-   git clone https://github.com/RishBroProMax/News-Bot
-   ```
-2. Edit `Config.py` and fill the needed variables
-
-3. Enter the directory
-   ```markdown
-   cd config
-   ```
-4. Run the file
-   ```markdown
-   python3 main.py
-   ```
-
-## Environment Variables
-
 #### Mandatory Vars
 
 - `API_ID` - Get this from [my.telegram.org](https://my.telegram.org/auth)
