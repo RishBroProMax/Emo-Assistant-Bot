@@ -4,10 +4,16 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from news import LK
 
+API_ID = '14055090'
+API_HASH = 'a46f7b439d0afa45b7a69fc450f754e9'
+BOT_TOKEN = '5889157468:AAEYpUCdl3MJry5cDGHr3eWjM-5Tv5YnXns'
 
-bot = API_ID = '14055090'
-      API_HASH = 'a46f7b439d0afa45b7a69fc450f754e9'
-      BOT_TOKEN = '5889157468:AAEYpUCdl3MJry5cDGHr3eWjM-5Tv5YnXns'
+bot = Client(
+    "lol",
+    api_id=API_ID,
+    api_hash=API_HASH, 
+    bot_token=BOT_TOKEN,
+)
 
 # Start Massege
 
