@@ -1,11 +1,10 @@
-# Powerd By Newswire.lk
-# Credits @ImDenuwan
+# Powerd By SD Bots API
 
 from bs4 import BeautifulSoup
 import requests
 
 def LK():
-    req = requests.get("https://sinhala.newswire.lk/category/news/")
+    req = requests.get("https://api.sdbots.tk/hirunews")
     soup = BeautifulSoup(req.content , "lxml")
 
     x = soup.find("div" , {"class" :"entry-featured-img-wrap"})
@@ -27,5 +26,21 @@ def LK():
         "img_url" : image
     }
         
+    News.append(list)
+    return News
+
+#import requests
+#API = "https://api.sdbots.tk/hirunews"
+#req = requests.get(API).json()
+#print(req)
+
+
+# {
+# "date": "",
+#  "description": "",
+#  "img": "",
+# "link": "",
+#  "title": ""
+#}
     News.append(list)
     return News
