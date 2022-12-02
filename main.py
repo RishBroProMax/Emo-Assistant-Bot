@@ -1,6 +1,6 @@
 
-import pyrogram
-from pyrogram import filters, idle
+import pyrogram 
+from pyrogram import Client, Filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
 
