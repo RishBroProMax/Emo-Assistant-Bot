@@ -1,8 +1,7 @@
-
-import pyrogram 
 from pyrogram import Client, Filters
-from pyrogram.errors import FloodWait
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
+from pyrogram import Message, InlineKeyboardButton, InlineKeyboardMarkup
+import os
+import TgCrypto
 
 API_ID = '14055090'
 API_HASH = 'a46f7b439d0afa45b7a69fc450f754e9'
