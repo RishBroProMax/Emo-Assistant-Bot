@@ -1,6 +1,5 @@
-from pyrogram import Client, Filters
-from pyrogram import Message, InlineKeyboardButton, InlineKeyboardMarkup
-import os
+from pyrogram import Client, filters
+from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 import TgCrypto
 
 API_ID = '14055090'
