@@ -22,6 +22,33 @@ HELP = """
 
 /start
 /help
+/bots
+"""
+
+BOTS = """
+♻️ Bot Stetus Chacker ♻️ 
+
+✅ = Running..  
+❌ = Not Working.. 
+
+▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰
+
+1. @emFsub_Bot ❌
+
+2. @emURLBypasser_Bot ❌
+
+3. @MRCM_Scouts_Bot ✅
+
+4. @emAFK_Bot  ❌
+
+5. @Katszuki_Bot ❌
+
+6. @ImRishmika_Bot ✅
+
+7. @EmoAssistant_Bot ✅
+
+▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰
+
 """
 
 # Commands
@@ -33,6 +60,9 @@ async def start(bot, message):
 async def help(bot, message):
   await message.reply_photo("https://telegra.ph/file/79ee63a32d8e38842dfa0.jpg",caption=HELP,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="</> ємσ вσт ∂єνσℓσρєʀѕ", url="t.me/EmoBotDevolopers")]]))
 
+@app.on_message(filters.command("bots"))
+async def help(bot, message):
+  await message.reply_photo("https://telegra.ph/file/c4ea3761bb73bab726334.jpg",caption=HELP,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="</> ємσ вσт ∂єνσℓσρєʀѕ", url="t.me/EmoBotDevolopers")]]))
 
     
 print("Bot Stated. Check Now")
