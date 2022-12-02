@@ -67,6 +67,6 @@ async def help(bot, message):
 async def bots(bot, message):
   await message.reply_photo("https://telegra.ph/file/c4ea3761bb73bab726334.jpg",caption=BOTS,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="</> ємσ вσт ∂єνσℓσρєʀѕ", url="t.me/EmoBotDevolopers")]]))
 
-    
-print("Bot Stated.)
-app.run()
+  
+  print("Bot Stated")
+  app.run()
