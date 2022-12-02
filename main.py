@@ -42,3 +42,7 @@ async def help(_, m : message):
 @app.on.message(filters.command("bots"))
 async def help(_, m : message):
     awaitm.reply_txt("❤️ I m Alive Now...")
+    
+    
+print("Bot Stated. Check Now")
+app.run()
