@@ -22,8 +22,6 @@ HELP = """
 
 /start
 /help
-/bots
-/test 
 """
 
 # Commands
@@ -35,14 +33,7 @@ async def start(bot, message):
 async def help(bot, message):
   await message.reply_photo("https://telegra.ph/file/79ee63a32d8e38842dfa0.jpg",caption=HELP,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="</> ємσ вσт ∂єνσℓσρєʀѕ", url="t.me/EmoBotDevolopers")]]))
 
-@app.on.message(filters.command("bots"))
-async def help(_, m : message):
-    awaitm.reply_txt("♻️ Bot Stetus Chacker ♻️ \n ✅ = Running.. \n ❌ = Not Working.. \n\n  @emFsub_Bot ❌\n\n @emURLBypasser_Bot ❌\n\n @MRCM_Scouts_Bot ✅ \n\n @emAFK_Bot ❌\n\n @Katszuki_Bot ❌\n\n @ImRishmika_Bot ✅")
 
-@app.on.message(filters.command("bots"))
-async def help(_, m : message):
-    awaitm.reply_txt("❤️ I m Alive Now...")
-    
     
 print("Bot Stated. Check Now")
 app.run()
