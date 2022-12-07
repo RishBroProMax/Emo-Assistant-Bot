@@ -18,9 +18,6 @@ repmark = InlineKeyboardMarkup(
         [
         InlineKeyboardButton(text="💡 Bot 💡", url=f"http://t.me/{Config.BOT_USERNAME}") 
         ],
-        [
-         InlineKeyboardButton(text="⭕ Join ⭕", url=f"https://t.me/{Config.CHANNEL}")
-        ]
       ]
     )
 
