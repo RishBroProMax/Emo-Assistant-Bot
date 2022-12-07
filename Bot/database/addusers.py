@@ -1,8 +1,7 @@
 import os
 from pyrogram import Client
-from config import Config
 from pyrogram.types import Message
-from Userbot.helpers.database import (
+from Bot.helpers.database import (
     is_served_user,
     get_served_users,
     add_served_user,
