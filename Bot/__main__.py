@@ -30,7 +30,7 @@ async def bots(bot, message):
 
 async def main_startup():
     await app.start()
-    logging.info("Bot is Alive...")
+    logging.info("Emo Assistant Bot Alive..")
     await idle()
 
 loop = asyncio.get_event_loop()
