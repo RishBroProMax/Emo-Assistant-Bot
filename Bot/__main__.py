@@ -1,4 +1,3 @@
-import os,time
 from time import sleep
 from config import Config
 from pyrogram.types import Message
