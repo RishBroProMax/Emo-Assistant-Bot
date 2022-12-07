@@ -7,8 +7,8 @@ from pyrogram.types import ChatPermissions
 from pyrogram.types import (Message, InlineQuery, InlineQueryResultArticle, InlineQueryResultPhoto, InputTextMessageContent,
                             InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery)
 
-from Bot import bot as app
-from Bot.database.database import (
+from bot import bot as app
+from bot.helpers.database import (
     get_served_users,
     add_served_user,
     remove_served_user,
@@ -40,7 +40,7 @@ async def broadcast_messages(user_id, message):
 async def broadcast_message(_, message):
     b_msg = message.reply_to_message
     chats = await get_served_users()
-    m = await message.reply_text("❤️‍🔥 | Broadcast in progress... 😴")
+    m = await message.reply_text("𝙱𝚛𝚘𝚊𝚍𝚌𝚊𝚜𝚝𝚒𝚗𝚐 𝙿𝚕𝚞𝚐𝚒𝚗 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚒𝚗𝚐..")
     for chat in chats:
         try:
             await broadcast_messages(int(chat['bot_users']), b_msg)
@@ -49,5 +49,8 @@ async def broadcast_message(_, message):
             await asyncio.sleep(int(e.x))
         except Exception:
             pass
-    await m.edit(f"""
-❤️‍🔥 | Broadcast Completed. ☘️""")
+    await m.edit("𝙶𝚎𝚝𝚝𝚒𝚗𝚐 𝙱𝚌𝚊𝚜𝚝 𝚃𝚇𝚃..")
+          m.edit("𝚂𝚎𝚊𝚛𝚌𝚑𝚒𝚗𝚐 𝙱𝚘𝚝 𝚄𝚜𝚎𝚛𝚜.. ")
+          m.edit("𝚂𝚎𝚗𝚍𝚒𝚗𝚐..")
+          m.edit("𝙱𝚛𝚘𝚊𝚍𝚌𝚊𝚜𝚝 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍 ✅️")
+
