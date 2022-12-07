@@ -8,3 +8,4 @@ class Config(object):
      BOT_TOKEN = "5715378157:AAF9kdjlzO6zaEvQHVDIunKOYce3PzFQH6c"
      MONGODB_URI = ""
      OWNER = int(5262156299)
+     BOT_USERNAME = "EmoAssistant_Bot"
