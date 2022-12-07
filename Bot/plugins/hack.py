@@ -3,6 +3,7 @@ from pyrogram import filters, Client
 from pyrogram.types import Message
 
 import asyncio
+from Bot import bot
 
 @bot.on_message(filters.command('hack'))
 
