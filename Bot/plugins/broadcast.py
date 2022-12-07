@@ -7,8 +7,8 @@ from pyrogram.types import ChatPermissions
 from pyrogram.types import (Message, InlineQuery, InlineQueryResultArticle, InlineQueryResultPhoto, InputTextMessageContent,
                             InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery)
 
-from Userbot import bot as app
-from Userbot.helpers.database import (
+from Bot import bot as app
+from Bot.database.database import (
     get_served_users,
     add_served_user,
     remove_served_user,
