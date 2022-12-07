@@ -1,9 +1,21 @@
-import pyrogram
+import os,time
+from time import sleep
+from config import Config
+from pyrogram.types import Message
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto, CallbackQuery, InlineQuery, InlineQueryResultArticle, InlineQueryResultPhoto, InputTextMessageContent
+from requests import get,post
+import asyncio
+import logging
+from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
+import requests
+from Bot import LOG
+from Bot.database.addusers import AddUserToDatabase, AddChatToDatabase
+from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram import Client, filters
-from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from Bot import bot as app
 from plugins import*
 from main import BOTS, START, HELP
+
 
 @app.on_message(filters.command("start"))
 async def start(bot, message):
@@ -17,4 +29,11 @@ async def help(bot, message):
 async def bots(bot, message):
   await message.reply_photo("https://telegra.ph/file/c4ea3761bb73bab726334.jpg",caption=BOTS,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="</> ємσ вσт ∂єνσℓσρєʀѕ", url="t.me/EmoBotDevolopers")]]))
 
+async def main_startup():
+    print (LOGO)
+    await bot.start()
+    logging.info("Bot is Alive...")
+    await idle()
 
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main_startup())
