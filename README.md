@@ -1,26 +1,3 @@
-# News-Bot
-The Simple And Fast News Bot
+## කොල්ලෝ මේකට Must Join,bcast, logo making දාන්න මේක auto run වෙනවා. code එකේ erorr එකක් තියනවනම් telegram එකේ ඉන්න @EmoAssistant_Bot වැඩ නැ.. මේකේ දැනට තියෙන්නේ command තුනයි..
 
-## 🧩Deploy Now
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RishBropromax/News-Bot.git)
-
-1. Tap on above button and fill `API_ID`, `API_HASH`, `BOT_TOKEN`.
-2. Then tap "Deploy App" below it. Wait till deploying is complete (will take atmost 2 minutes).
-3. After deploying is complete, tap on "Manage App"
-4. Check the logs to see if your bot is ready!
-
-#### Mandatory Vars
-
-- `API_ID` - Get this from [my.telegram.org](https://my.telegram.org/auth)
-- `API_HASH` - Get this from [my.telegram.org](https://my.telegram.org/auth)
-- `BOT_TOKEN` - Get this from [@BotFather](https://t.me/BotFather)
-
-## Functions
-
-> More features soon if suggested by you :)
-
-# ❤️Credits
-
-### ✨Rishmika Sandanu
-### ✨ImDenuwan
+#Railyway එකෙන් restart වෙන්න විනාඩි 2ක්‌ වගේ යයි 
