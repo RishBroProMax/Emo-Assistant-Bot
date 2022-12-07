@@ -98,41 +98,4 @@ async def logomake(_, message: Message):
             )
     await m.delete()
 
-"""
-@bot.on_message(filters.command("plogo") & ~filters.forwarded)
-async def logomake(_, message: Message):
-    if len(message.command) != 2:
-        return await message.reply_text("Please give a text.\nEx:`/plogo hehe` ")
-    else:
-        pass
-    m = await message.reply('Designing your logo...wait!')
-    await m.edit("Logo in processing...\n\n[░░░░░░░░░░] 0%")
-    await m.edit("Logo in processing...\n\n[▇▇░░░░░░░░] 20%")
-    await m.edit("Logo in processing...\n\n[▇▇▇▇░░░░░░] 40%")
-    await m.edit("Logo in processing...\n\n[▇▇▇▇▇▇░░░░] 60%")
-    await m.edit("Logo in processing...\n\n[▇▇▇▇▇▇▇▇░░] 80%")
-    await m.edit("Logo in processing...\n\n[▇▇▇▇▇▇▇▇▇▇] 100%")
-    await m.edit("📤 Uploading...")
-    text = message.text.split(None, 1)[1]
-    img = Image.open("./Userbot/resources/20220404_091513.jpg")
-    draw = ImageDraw.Draw(img)
-    image_widthz, image_heightz = img.size
-    pointsize = 500
-    fillcolor = "gold"
-    shadowcolor = "blue"
-    font = ImageFont.truetype("./Userbot/resources/The Humble.ttf", 370)
-    w, h = draw.textsize(text, font=font)
-    h += int(h*0.21)
-    image_width, image_height = img.size
-    draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
-    x = (image_widthz-w)/2
-    y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="white", stroke_width=4, stroke_fill="magenta")
-    img.save("plogo.jpg")
-    await message.reply_photo(
-                photo=f"plogo.jpg",
-                caption=imgcaption,
-                reply_markup = repmark
-            )
-    await m.delete()
-"""
+
