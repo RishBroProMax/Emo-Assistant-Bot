@@ -1,5 +1,6 @@
 TgCrypto
 pyrogram
+telethon
 pyTelegramBotAPI
 asyncio
 DateTime
